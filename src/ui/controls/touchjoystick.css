@@ -1,0 +1,113 @@
+.tj-container {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 997;
+  pointer-events: none;
+}
+
+.tj-container * {
+  cursor: default;
+  pointer-events: none;
+  user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
+.tj-base-image-left {
+  width: 100%;
+  height: auto;
+  transform: scaleX(-1);
+  user-select: none;
+  pointer-events: none;
+}
+
+.tj-base-image-right {
+  width: 100%;
+  height: auto;
+  user-select: none;
+  pointer-events: none;
+}
+
+.tj-base-position {
+  position: absolute;
+  top: 85%;
+  width: 33%;
+  height: auto;
+  transform: translateY(-100%);
+  opacity: 25%;
+  pointer-events: all;
+}
+
+.tj-base-portrait {
+  width: 45%;
+}
+
+.tj-base-left {
+  left: -14.5%;
+}
+
+.tj-base-right {
+  right: -14.5%;
+}
+
+.tj-stick {
+  position: absolute;
+  top: -9%;
+  width: 30%;
+  transform-origin: 50% 65%;
+}
+
+.tj-stick-left {
+  left: 55%;
+}
+
+.tj-stick-right {
+  right: 55%;
+}
+
+.tj-stick-image {
+  width: 100%;
+  height: auto;
+  user-select: none;
+}
+
+.tj-buttons-left {
+  left: -20%;
+}
+
+.tj-buttons-right {
+  right: -20%;
+}
+
+.tj-buttons-all {
+  position: absolute;
+  user-select: none;
+  width: 13.5%;
+  height: auto;
+  pointer-events: none;
+}
+
+.tj-buttons-button0-left {
+  top: 63.5%;
+  right: 10.5%;
+  transform: scaleX(-1);
+}
+
+.tj-buttons-button1-left {
+  top: 16.2%;
+  right: 10.2%;
+  transform: scaleX(-1);
+}
+
+.tj-buttons-button0-right {
+  top: 63.5%;
+  left: 11%;
+}
+
+.tj-buttons-button1-right {
+  top: 16.3%;
+  left: 10.5%;
+}

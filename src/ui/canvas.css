@@ -1,0 +1,70 @@
+.canvas-text {
+  display: grid;
+  text-align: center;
+  vertical-align: middle;
+  padding-bottom: 0px;
+}
+
+.main-canvas {
+  grid-column: 1;
+  grid-row: 1;
+  border-color: #583927;
+  border-style: solid;
+  background-color: black;
+  background-size: 100% 100%;
+  outline: none;
+  z-index: 0;
+}
+
+.hidden-textarea {
+  grid-column: 1;
+  grid-row: 1;
+  opacity: 0;
+}
+
+.hgr-view {
+  position: absolute;
+  user-select: none;
+  pointer-events: none;
+}
+
+.hgr-view-box {
+  border: 2px solid red;
+}
+
+.hgr-view-text {
+  z-index: 9999;
+  background-color: var(--input-background);
+  color: var(--text-color);
+  user-select: none;
+  pointer-events: none;
+  font-family: monospace;
+  font-size: 10pt;
+  line-height: 11pt;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 2px;
+  border-radius: 10px;
+  margin-left: 15px;
+}
+
+body.dark-mode .hgr-view-text {
+  background-color: var(--input-background-dark);
+  color: var(--text-color-dark);
+}
+
+.scanline-gradient::after {
+  display: var(--scanlines-display, none);
+  pointer-events: none;
+  content: "";
+  position: absolute;
+  left: var(--scanlines-left);
+  top: var(--scanlines-top);
+  width: var(--scanlines-width);
+  height: var(--scanlines-height);
+  background: linear-gradient(to bottom,
+      transparent 50%,
+      rgba(0, 0, 0, 0.3) 51%);
+  background-size: 100% 4px;
+  z-index: 1;
+}
