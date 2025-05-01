@@ -3,7 +3,7 @@
   "editor.detectIndentation": false,
   "editor.defaultFormatter": null,
   "[typescript]": {
-    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+    "editor.defaultFormatter": "vscode.typescript-language-features"
   },
   "editor.formatOnType": false, // required
   "editor.formatOnPaste": true, // optional
